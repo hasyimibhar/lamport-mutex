@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package mutex;
+
+service Node {
+  rpc Lock (LockRequest) returns (LockResponse) {}
+  rpc Unlock (UnlockRequest) returns (UnlockResponse) {}
+}
+
+message LockRequest {
+  uint64 t = 1;
+  uint64 nodeId = 2;
+}
+
+message LockResponse {
+  uint64 t = 1;
+  uint64 nodeId = 2;
+}
+
+message UnlockRequest {
+  uint64 t = 1;
+  uint64 nodeId = 2;
+}
+
+message UnlockResponse {
+  uint64 t = 1;
+  uint64 nodeId = 2;
+}
