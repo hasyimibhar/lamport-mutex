@@ -1,6 +1,6 @@
 # Distributed mutex using Lamport's Logical Clock
 
-This is a naive implementation of distributed mutual exclusion using Lamport's Logical Clock<sup>1</sup> using gRPC.
+This is a naive implementation of distributed mutual exclusion using Lamport's Logical Clock<sup>1</sup>, done using Go and gRPC.
 
 ## Usage
 
